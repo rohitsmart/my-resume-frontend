@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Navbar, NavbarBrand, Nav, NavItem, NavLink, Container, NavbarToggler, Collapse, Button } from 'reactstrap';
-import { FaGithub, FaLinkedin, FaFacebook, FaTwitter, FaInstagram, FaMoon, FaSun, FaBars } from 'react-icons/fa';
-import '../styles/AppNavbar.css'
+import { FaGithub, FaLinkedin, FaFacebook, FaTwitter, FaInstagram, FaMoon, FaSun } from 'react-icons/fa';
+import '../styles/AppNavbar.css';
+
 const AppNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
@@ -20,7 +21,6 @@ const AppNavbar = () => {
           </Button>
         </div>
         
-        {/* Center - Social Media Icons */}
         <NavbarBrand href="/" className="mx-auto">My Portfolio</NavbarBrand>
 
         <Collapse isOpen={isOpen} navbar>
