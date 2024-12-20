@@ -1,0 +1,76 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar container */
+  .navbar {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: block;
+  }
+  
+  /* Top bar with flexbox for layout */
+  .top-bar {
+    display: flex;
+    justify-content: space-between; /* Distribute space between left, center, and right */
+    align-items: center;
+    padding: 10px;
+  }
+  
+  /* Left section styling */
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between menu and slider */
+  }
+  
+  .menu, .slider {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+  }
+  
+  .menu svg {
+    font-size: 20px;
+  }
+  
+  .slider .toggle-btn {
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .slider .toggle-btn:hover {
+    background-color: #666;
+  }
+  
+  /* Center section styling */
+  .center {
+    flex-grow: 1; /* Center will take the remaining space */
+    text-align: center;
+  }
+  
+  .center-content {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Right section styling */
+  .right {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .right-content {
+    font-size: 18px;
+    text-align: right;
+  }
+  
